@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compromisos Medipiel</title>
+  <style>
+    body {
+      background-color: #eceae9;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .form-wrapper {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 3em 1.5em;
+      background-color: #eceae9;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    .header h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #c09366;
+      margin: 0;
+    }
+    .header h2 {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #9a6e35;
+      margin-top: 0.2em;
+    }
+    .quote {
+      text-align: center;
+      font-style: italic;
+      font-size: 1em;
+      color: #888;
+      margin: 2em 0;
+    }
+    label {
+      display: block;
+      margin-top: 1.8em;
+      font-size: 1em;
+      color: #333;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      background-color: #ffffff;
+      border: none;
+      border-bottom: 1px solid #999;
+      padding: 0.6em;
+      font-size: 1em;
+      margin-top: 0.2em;
+      color: #333;
+    }
+    textarea {
+      height: 150px;
+      border: 1px solid #999;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    button {
+      margin-top: 2em;
+      width: 100%;
+      background-color: #9a6e35;
+      color: white;
+      border: none;
+      padding: 0.8em;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #805c2b;
+    }
+    .footer {
+      margin-top: 3em;
+      text-align: center;
+      font-weight: 300;
+      color: #888;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-wrapper">
+    <div class="header">
+      <h1>Medipiel</h1>
+      <h2 style="color: #c09366;">Compromisos</h2>
+    </div>
+    <div class="quote">
+      “La realidad es construida, mantenida y modificada con las conversaciones”<br>— Dr. Ludwig Wittgenstein
+    </div>
+    <form action="https://formsubmit.co/williamfrancojaramillo@gmail.com" method="POST">
+      <input type="hidden" name="_autoresponse" value="Gracias por enviar tus compromisos. Hemos recibido tu mensaje.">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_subject" value="Nuevo compromiso enviado">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="Nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="factorA1">Desde mi rol en Medipiel me comprometo en a tomar estas acciones: <strong>Factor A</strong></label>
+      <textarea id="factorA1" name="Factor A - Compromiso 1" required></textarea>
+
+      <label for="factorB">Desde mi rol en Medipiel me comprometo en a tomar estas acciones: <strong>Factor B</strong></label>
+      <textarea id="factorB" name="Factor B" required></textarea>
+
+      <label for="factorA2">Desde mi rol en Medipiel me comprometo en a tomar estas acciones: <strong>Factor A</strong></label>
+      <textarea id="factorA2" name="Factor A - Compromiso 2" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="footer" style="color:#777; font-size: 1.1em; letter-spacing: 0.2em;">AUGURAL</div>
+  </div>
+</body>
+</html>
